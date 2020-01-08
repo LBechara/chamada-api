@@ -8,25 +8,23 @@ function chama(){
     x.open("GET" , urlPacientes);
     x.responseType = 'json';
     
-    var resposta = x.response;
-    
-    x.onload = () => {
+    x.onload = function() {
         if (x.status === 200) {
             resolve(x.response);
-            console.log("bananas");
         } else {
             reject(Error('deu ruim bb:' + x.statusText));
-            console.log("não deu");
         }
-        x.send();
     }
-
+    x.send();
     });
-
-    promise.then((message) => {
-        console.log('ta aqui' + message)
+    
+    promise.then((resultado) => {
+        console.log(resultado);
     })
 }
+
+
+
 
 
 function ok() {
