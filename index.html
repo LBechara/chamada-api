@@ -11,20 +11,37 @@
     <p id="teste"></p>
     <button onclick="document.getElementById('teste').innerHTML = chama()">x</button>
     
-    <table>
+    <table id="table">
         <tr id="primeiro">
-            <td id="x" class="marquinhos">bacana</td>
-            <td id="y">bacan</td>
-            <td id="z">baca</td>
-            <td id="n">bac</td>
+            <td id="nome">bacana</td>
+            <td id="altura">bacan</td>
+            <td id="peso">baca</td>
+            <td id="gordura">bac</td>
+            <td id="imc">bac</td>
         </tr>
         <tr id="segundo">
-            <td id="x">bacana</td>
-            <td id="y">bacan</td>
-            <td id="z">baca</td>
-            <td id="n">bac</td>
+            <td id="nome">bacana</td>
+            <td id="altura">bacan</td>
+            <td id="peso">baca</td>
+            <td id="gordura">bac</td>
+            <td id="imc">bac</td>
         </tr>
     </table>
+    <form id="form">
+        <label for="nomeform">nome</label>
+        <input type="text" name="nome" id="nomeform">
+
+        <label for="alturaform">altura</label>
+        <input type="text" name="altura" id="alturaform">
+        
+        <label for="pesoform">peso</label>
+        <input type="text" name="peso" id="pesoform">
+        
+        <label for="gorduraform">gordura</label>
+        <input type="text" name="gordura" id="gorduraform">
+
+        <input type="submit" value="enviar" id="submitform">
+    </form>
     
     <script src="main.js"></script>
 </body>
